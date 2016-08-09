@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="testing_dropbox" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UCd-yN-z8B">
+                                <rect key="frame" x="137" y="318" width="100" height="30"/>
+                                <state key="normal" title="Login Dropbox"/>
+                                <connections>
+                                    <action selector="linkBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jkj-aV-CUp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aVI-Uh-S09">
+                                <rect key="frame" x="16" y="20" width="44" height="30"/>
+                                <state key="normal" title="logout"/>
+                                <connections>
+                                    <action selector="logout:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ba5-hc-6Ug"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bGR-LE-fj1">
+                                <rect key="frame" x="16" y="617" width="34" height="30"/>
+                                <state key="normal" title="Save"/>
+                                <connections>
+                                    <action selector="saveText:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kIE-Ft-llh"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gNI-bt-hVJ">
+                                <rect key="frame" x="139" y="378" width="97" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="97" id="5ot-rc-nbP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cpY-ij-v6J">
+                                <rect key="frame" x="309" y="617" width="50" height="30"/>
+                                <state key="normal" title="Upload"/>
+                                <connections>
+                                    <action selector="upload:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7gB-bI-mzJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uix-xR-eOw">
+                                <rect key="frame" x="137" y="68" width="101" height="30"/>
+                                <state key="normal" title="Download files"/>
+                                <connections>
+                                    <action selector="download:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IWO-lL-4Bf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w1S-VV-Asc">
+                                <rect key="frame" x="165" y="617" width="45" height="30"/>
+                                <state key="normal" title="Delete"/>
+                                <connections>
+                                    <action selector="deleteBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="170-EN-ab6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5lU-qE-ksd">
+                                <rect key="frame" x="167" y="150" width="40" height="30"/>
+                                <state key="normal" title="Share"/>
+                                <connections>
+                                    <action selector="share:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bjm-gy-xbh"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="aVI-Uh-S09" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="1CJ-U1-QtD"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="bGR-LE-fj1" secondAttribute="bottom" constant="20" id="1Ks-Wx-G5w"/>
+                            <constraint firstItem="w1S-VV-Asc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1ej-AF-Ltw"/>
+                            <constraint firstItem="gNI-bt-hVJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1zr-Wo-bcc"/>
+                            <constraint firstItem="bGR-LE-fj1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="D6M-na-VKL"/>
+                            <constraint firstItem="UCd-yN-z8B" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="JQp-Q1-Hxs"/>
+                            <constraint firstItem="5lU-qE-ksd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Kaf-6t-BLZ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="cpY-ij-v6J" secondAttribute="trailing" id="MkI-Ej-5yZ"/>
+                            <constraint firstItem="5lU-qE-ksd" firstAttribute="top" secondItem="Uix-xR-eOw" secondAttribute="bottom" constant="52" id="Mpf-G8-DoL"/>
+                            <constraint firstItem="Uix-xR-eOw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VEy-N1-COl"/>
+                            <constraint firstItem="aVI-Uh-S09" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="aYk-3i-QDk"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="w1S-VV-Asc" secondAttribute="bottom" constant="20" id="alN-go-m2G"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="cpY-ij-v6J" secondAttribute="bottom" constant="20" id="kh9-hu-nhO"/>
+                            <constraint firstItem="Uix-xR-eOw" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="48" id="vOK-50-qze"/>
+                            <constraint firstItem="gNI-bt-hVJ" firstAttribute="top" secondItem="UCd-yN-z8B" secondAttribute="bottom" constant="30" id="xib-fa-PrV"/>
+                            <constraint firstItem="UCd-yN-z8B" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yZE-Aw-Tpa"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="textField" destination="gNI-bt-hVJ" id="kPO-3b-hCz"/>
+                        <segue destination="Yrh-xm-Nqm" kind="show" identifier="showSecondViewController" id="My7-nn-a1h"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7.5" y="480.5"/>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="ihb-mo-ndU">
+            <objects>
+                <viewController id="Yrh-xm-Nqm" customClass="SecondViewController" customModule="testing_dropbox" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="AVk-lB-MCR"/>
+                        <viewControllerLayoutGuide type="bottom" id="qWk-zb-2jy"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="KNS-2a-Xsc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cl7-5C-hcH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="535.5" y="480.5"/>
+        </scene>
+    </scenes>
+</document>
